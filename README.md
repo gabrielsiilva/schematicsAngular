@@ -1,28 +1,24 @@
-# Getting Started With Schematics
+# Como usar
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+- git clone do repositório em sua máquina.
+- comando npm link deve ser executado dentro do seu novo projeto, o projeto que você deseja que seja organizado com a estrutura padrão.
 
-### Testing
+```cmd
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
-
-Check the documentation with
-```bash
-schematics --help
+npm link 'path/para/a/pasta/que/você/clonou/o/schema'
+foobar.pluralize('goose') # returns 'geese'
+foobar.singularize('phenomena') # returns 'phenomenon'
 ```
 
-### Unit Testing
+- após usar o npm link, usar o seguinte comando: 
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
+```cmd
+ng config cli.defaultCollection projeto-base-frontend
 ```
 
-That's it!
- 
+- o comando acima irá configurar o angular para usar o nosso modelo.
+- após feito isto apenas rodar o comando:
+
+```angular
+ng g projeto-base-frontend:projeto-base-frontend
+```
