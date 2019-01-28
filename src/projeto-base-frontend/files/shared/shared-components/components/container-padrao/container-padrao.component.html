@@ -1,0 +1,19 @@
+<div class="card">
+  <app-im-alert></app-im-alert>
+  <div class="card-header" *ngIf="cardPesquisa">
+    <div class="row mb-0">
+
+      <div class="col-12">
+        <a href="#collapseTable" class="collapse-table" data-toggle="collapse" role="button" aria-expanded="true"
+          aria-controls="collapseTable">
+          Resultado pesquisa
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card-body table-responsive collapse show" id="{{ cardPesquisa ? 'collapseTable' : '' }}">
+    <ng-content></ng-content>
+  </div>
+</div>

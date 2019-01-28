@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "projeto-base-frontend",
+    "title": "ProjetoBaseFrontend",
+    "type": "object",
+    "properties": {
+        "spec": {
+            "type": "boolean",
+            "default": true,
+            "description": "Define se os arquivos de teste serão gerados."
+        }
+    }
+}

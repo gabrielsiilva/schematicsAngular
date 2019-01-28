@@ -1,0 +1,17 @@
+<ng-template #template>
+  <div class="modal-header">
+    <h5 class="modal-title">{{title}}</h5>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body text-center">
+    <p>{{msg}}</p>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-secondary" (click)="confirmar(false)">Não</button>
+    <button type="button" class="btn btn-success" (click)="confirmar(true)">Sim</button>
+  </div>
+</ng-template>

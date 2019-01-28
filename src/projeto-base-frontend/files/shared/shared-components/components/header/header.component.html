@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light mb-2">
+  <div class="container">
+
+    <a class="navbar-brand d-none d-sm-inline-block" href="#">Integrador Municipal
+      <small>- IM</small>
+    </a>
+
+    <button class="navbar-toggle d-none" type="button" data-toggle="collapse" data-target=".collapse-nav">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse w-100 order-3 collapse-nav">
+      <div class="navbar-nav ml-auto">
+        <ul class="navbar-nav mt-2 mt-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="administracaoDrop" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Administração</a>
+
+            <div class="dropdown-menu" aria-labelledby="cadastroDrop">
+              <a [routerLink]="['administracao/servicos']" class="dropdown-item">Serviços</a>
+              <a [routerLink]="['administracao/parametros']" class="dropdown-item">Parâmetros</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</nav>

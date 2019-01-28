@@ -1,0 +1,11 @@
+<app-im-container-padrao title="Log" *ngIf="logModel?.usuarioCriacao  != null">
+  <div>
+    Criado por {{logModel.usuarioCriacao}} em {{getData(logModel.dataCriacao) | date:'dd/MM/yyyy HH:mm'}}
+  </div>
+  <div *ngIf="logModel?.usuarioUltimaAlteracao != null">
+    <i>
+      Última alteração por {{logModel.usuarioUltimaAlteracao}} em {{getData(logModel.dataUltimaAlteracao)
+      |date:'dd/MM/yyyy HH:mm'}}
+    </i>
+  </div>
+</app-im-container-padrao>

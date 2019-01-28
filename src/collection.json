@@ -1,0 +1,17 @@
+{
+  "author": "Gabriel Silva",
+  "email": "gabrielp.siilva@gmail.com",
+  "version": "0.0.1",
+  "_comments": {
+    "_factory": "é o path onde será desenvolvido o schema.",
+    "_schema": "é o path para o arquivo de opções do schema."
+  },
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "projeto-base-frontend": {
+      "factory": "./projeto-base-frontend",
+      "description": "Projeto que servirá de base para o desenvolvimento do frontend.",
+      "schema": "./projeto-base-frontend/schema.json"
+    }
+  }
+}

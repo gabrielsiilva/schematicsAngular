@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-6">
+
+    <div class="registros" aria-live="polita" role="status">
+      <p class="total">Total de registros: {{ totalItems }}</p>
+      <p class="listando">Listando  {{ quantidadeItemsAtuais }} de {{ totalItems }}</p>
+    </div>
+
+  </div>
+
+  <div class="col-sm-6 d-flex justify-content-end">
+    <pagination class="pagination-sm" (pageChanged)="novaPagina($event)" [boundaryLinks]="true" [totalItems]="totalItems"
+      previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+  </div>
+</div>
